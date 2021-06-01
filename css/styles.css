@@ -1,0 +1,80 @@
+/*Element général*/
+
+body{
+    margin: 0px;
+    font-family: "Raleway", sans-serif ;
+}
+
+/*En tête de la page (header)*/
+
+header {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+/*logo du site*/
+#logo img {
+    margin-left: 15px;
+}
+/*Menu de navigation*/
+nav {
+    display: flex;
+}
+nav ul{
+    display: flex;
+    
+}
+nav li {   
+    padding: 30px;
+    list-style: none;
+}
+#lodging a, #activity a, #sign_up a {
+    font-size: 15px;
+    font-weight: 600;
+}
+#lodging a {
+    color: #0065fc;
+    text-decoration: none;
+}
+#lodging a:hover, #activity a:hover {
+    border-top: #0065fc 3px solid;
+    padding-top: 45px;
+}
+#activity a {
+    color: #000;
+    text-decoration: none;
+}
+#sign_up a {
+    color: #0065fc;
+    text-decoration: none;
+}
+
+
+
+/*Footer*/
+footer{
+    background-color: #F2F2F2;
+    height: 200px; 
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.footer_infos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+         
+}
+footer a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
