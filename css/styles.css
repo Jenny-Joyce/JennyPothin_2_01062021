@@ -58,6 +58,59 @@ nav li {
 #sign_up a {
     font-weight: 600;
 }
+/*Section recherche et filtres*/
+#search, #search p {
+    width: 98%;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+#search h1 {
+    margin-left: 15px;
+    
+}
+
+#filters {
+    display: flex;
+    align-items: center;
+    
+}
+#filters h2 {
+    font-size: 15px;
+    margin-left: 15px;
+}
+#filter_ul{
+    display: flex;
+    padding-left: 25px;
+    
+}
+ 
+ 
+.icons_filters i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #0065fc;
+    background-color: #deebff;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.icons_filters {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px 30px 30px 30px;
+    margin-right: 25px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 15px 0px 0px;
+    
+    
+}
 
 
 
