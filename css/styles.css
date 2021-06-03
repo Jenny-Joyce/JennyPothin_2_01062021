@@ -78,7 +78,8 @@ nav li {
 
 #search_town{
     display: flex;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 15px;
     
 }
@@ -156,6 +157,29 @@ nav li {
     font-weight: 700;
     padding: 0px 15px 0px 0px;
 }
+/*
+Partie info*/
+#info {
+    display: flex;
+}
+
+#info i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #F2F2F2;
+    border-radius: 20px 20px 20px 20px ;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    color: #0065fc;
+    font-size: 13px;
+}
+
+#info p {
+   font-size: 14px;
+   font-weight: 500;
+   }
 
 
 
