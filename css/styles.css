@@ -8,7 +8,6 @@ body{
 /*En tête de la page (header)*/
 
 header {
-    width: 98%;
     max-width: 1200px;
     margin: auto;
     display: flex;  
@@ -54,6 +53,7 @@ nav li {
 #activity a:hover {
     border-top: #0065fc 3px solid;
     padding-top: 30px;
+    
 }
 
 #sign_up a {
@@ -116,6 +116,10 @@ nav li {
     font-weight: 600;
     padding: 10px;
 }
+#research:hover {
+    cursor: pointer;
+    
+}
 
 
 
@@ -157,6 +161,16 @@ nav li {
     font-weight: 700;
     padding: 0px 15px 0px 0px;
 }
+/*animation filtres*/
+.icons_filters:hover {
+    cursor: pointer;
+    background-color: #deebff;
+    transition-duration: 0.25s;
+}
+.icons_filters:hover i {
+    background-color: #ffff;
+    
+}
 /*
 Partie info*/
 #info {
@@ -180,6 +194,8 @@ Partie info*/
    font-size: 14px;
    font-weight: 500;
    }
+/*Partie hébergements*/
+
 
 
 
