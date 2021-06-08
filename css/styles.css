@@ -34,31 +34,31 @@ nav li {
     padding: 30px;
     list-style: none;
 }
-#lodging a, #activity a, #sign_up a {
+.lodging a, .activity a, .sign_up a {
     font-size: 15px;
     
 }
-#lodging a, #sign_up a {
+.lodging a, .sign_up a {
     color: #0065fc;
     text-decoration: none;
 }
-#lodging a {
+.lodging a {
     border-top: 5px solid #0065fc;
     padding: 30px;
     
 }
-#activity a {
+.activity a {
     color: #000;
     text-decoration: none;
 }
 
-#activity a:hover {
+.activity a:hover {
     border-top: #0065fc 3px solid;
     padding-top: 30px;
     
 }
 
-#sign_up a {
+.sign_up a {
     font-weight: 600;
 }
 
@@ -268,7 +268,7 @@ Partie info*/
     color: #0065fc;
 }
 
-.empty_star {
+.lodging_infos .empty_star, .info_popular .empty_star {
     color: #F2F2F2
 }
 
