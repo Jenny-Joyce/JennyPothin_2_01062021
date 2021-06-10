@@ -13,7 +13,6 @@ header {
    justify-content: space-between;
     align-items: center;
     padding: 0px 30px;
-    margin: auto;
 }
 
 /* logo du site */
@@ -38,31 +37,31 @@ nav li {
     list-style: none;
 }
 
-.lodging a, .activity a, .sign_up a {
+#lodging a, #activity a, #sign_up a {
     font-size: 15px;
 }
 
-.lodging a, .sign_up a {
+#lodging a, #sign_up a {
     color: #0065fc;
     text-decoration: none;
 }
 
-.lodging a {
+#lodging a {
     border-top: 5px solid #0065fc;
     padding: 30px;
 }    
 
-.activity a {
+#activity a {
     color: #000;
     text-decoration: none;
 }
 
-.activity a:hover {
+#activity a:hover {
     border-top: #0065fc 3px solid;
     padding-top: 30px;
 }
 
-.sign_up a {
+#sign_up a {
     font-weight: 600;
 }
 
@@ -164,7 +163,7 @@ nav li {
     list-style: none;
     font-size: 16px;
     font-weight: 700;
-    padding: 0px 15px 0px 0px;
+    padding: 0px 10px 0px 0px;
 }
 
 /* animation filtres */
@@ -498,4 +497,76 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/*Partie Responsive smartphone*/
+
+@media screen and (max-width: 768px) {
+
+    /* header*/
+    header {
+        width: 80%;
+        flex-direction: column;
+        align-items:flex-start;
+        position: relative;
+        
+    }
+    #logo img {
+        margin-top:15px ;
+    }
+    #sign_up {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    
+    nav ul {
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    #lodging {
+        padding: 30px 30px 10px 5px;
+    }
+    #lodging a {
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
+        padding-bottom: 10px;
+    }
+    #activity {
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+    /* Partie filtres*/
+    #search h1{
+        margin: 30px 15px 10px 15px;
+    }
+     #filters {
+       flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    #filters h2 {
+        font-size: 20px
+    }
+    #filters ul {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    #filters li {
+        margin: 10px;
+    }
+    #icon_family {
+        position: absolute;
+        right: 30px;
+    }
+    #info {
+        margin-top: 20px;
+
+    }
+    #info p {
+        margin: 0px 30px 0px 10px;
+    }
+    
 }
