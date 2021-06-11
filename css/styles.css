@@ -568,6 +568,28 @@ footer a:hover {
     #info p {
         margin: 0px 30px 0px 10px;
     }
+@media screen and (min-width: 320px){
+    /*header*/
+    header {
+        width: 100%;
+        
+    }
+    #icon_family {
+       
+    }
+    /*partie populaire*/
+    #most_popular {
+        order: 1;
+        border-radius: 0px;
+        width: 10%
+    }
+    .popular_location {
+        margin: 10px 25px;
+        border-radius: 20px;
+        width: 200px;
+    }
+}
+
     /*partie hébergement*/
     #card_content {
         flex-direction: column;
@@ -634,6 +656,7 @@ footer a:hover {
     }
     #activity_card {
         flex-direction: column;
+        
     }
     #activity_card .landscape img, .block_card1 .portrait1 img, .block_card1 .portrait2 img ,.block_card2 .portrait2 img, .block_card2 .portrait1 img{
         width: 340px;
@@ -658,5 +681,13 @@ footer a:hover {
     #activity_card h3 {
         margin: 10px 20px;
     }
-    
+    /*footer*/
+    footer {
+        flex-direction: column;
+        height: 450px;
+       
+    }
+    .footer_infos {
+        margin-top: 0px;
+    }
 }  
