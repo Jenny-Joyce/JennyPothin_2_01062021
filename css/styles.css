@@ -336,7 +336,7 @@ nav li {
     cursor: pointer;
 }
 
-/* partie infos hébergements*/
+/* partie infos populaires*/
 
 .info_popular {
     margin-left: 30px;
@@ -562,7 +562,7 @@ footer a:hover {
         right: 30px;
     }
     #info {
-        margin-top: 20px;
+        margin: 20px 0px;
 
     }
     #info p {
@@ -608,7 +608,25 @@ footer a:hover {
         font-weight: 800;
         padding: 20px 50px 15px 30px;
     }
+    /*Partie les plus populaires*/
     #most_popular {
         order: 1;
+        width: 435px;
+        border-radius: 0px;
     }
+    .popular_location {
+        margin: 25px 25px;
+        border-radius: 20px;
+        width: 380px;
+    }
+    .popular_location img {
+        width: 150px;
+    }
+    .info_popular {
+        margin: 0px 15px;
+    }
+    .info_popular i {
+        margin-top: 10px;
+    }
+    
 }
