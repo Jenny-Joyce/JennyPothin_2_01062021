@@ -568,5 +568,47 @@ footer a:hover {
     #info p {
         margin: 0px 30px 0px 10px;
     }
-    
+    /*partie hébergement*/
+    #card_content {
+        flex-direction: column;
+        margin: auto;    
+    }
+    #card_location {
+        background-color: #ffff;
+        order: 2;
+    }
+    #card_location h2 {
+        margin: 40px 0px 0px 40px 
+    }
+    #first_locations {
+        margin-bottom: 0px;
+    }
+    #first_locations, #second_locations {
+        flex-direction: column;
+        
+    }
+    .location, .locations {
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        width: 360px;
+        margin: 10px;
+        font-size: 15px;
+        
+    }
+    .location img, .locations img {
+        width: 350px;
+      margin: 5px;
+      border-radius: 30px 30px 0px 0px;
+    }
+    .lodging_infos {
+        margin-left: 20px;
+    }
+    #show_more {
+        font-size: 20px;
+        font-weight: 800;
+        padding: 20px 50px 15px 30px;
+    }
+    #most_popular {
+        order: 1;
+    }
 }
