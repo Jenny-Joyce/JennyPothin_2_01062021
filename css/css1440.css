@@ -1,0 +1,47 @@
+@media screen and (max-width: 1440px) {
+    header {
+        width: 80%;
+    }
+    #card_content {
+       
+    }
+    #card_location {
+       width: 50%;
+        height: 650px;        
+        flex: 1;
+        margin-right: 15px;
+    }
+   
+    #first_locations, #second_locations {
+        margin-left: 5px;
+         
+     }
+    .location, .locations {
+        width: 230px;
+        margin: 0px 8px
+    }
+    .location img, .locations img {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .lodging_infos h3 {
+        font-size: 14px;
+    }
+    #most_popular {
+        
+        height: 650px;
+    }
+    .popular_location {
+        width: 400px;
+        height: 130px;
+        margin: 30px;
+    }
+    .popular_location img {
+        width: 150px;
+        height: 120px;
+        
+    }
+    
+    
+}
