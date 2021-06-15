@@ -112,7 +112,7 @@ nav li {
     padding-left: 10px;
 }
 
-#search_town #research {
+#search_town .research_town {
     display: flex;
     align-items: center;
      border: none;
@@ -122,8 +122,10 @@ nav li {
     font-weight: 600;
     padding: 10px;
 }
-
-#research:hover {
+.searchIcon {
+    visibility: hidden;
+}
+.research:hover {
     cursor: pointer;
 }
 
