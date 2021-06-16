@@ -1,0 +1,209 @@
+ @media screen and (max-width:1024px) {
+     
+ /* header*/
+    header {
+    width: 100%;
+    flex-direction: column;
+    align-items:flex-start;
+    position: relative;
+    padding: 0px 5px;
+   }
+    #logo img {
+    margin-top:15px ;
+    }
+    /*navbar*/
+    #sign_up {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding-right: 5px;
+    }
+    nav ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    #lodging {
+        padding: 30px 0px 10px 5px;
+    }
+    #lodging a {
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
+        padding-bottom: 10px;
+    }
+    #activity {
+        border-bottom: 3px solid #F2F2F2;
+        padding: 30px 40px 10px;
+    }
+    /* Partie filtres*/
+    #search {
+        padding-left: 5px;
+    }
+    #search h1{
+        margin: 30px 15px 10px 15px;
+    }
+    #search_town {
+        margin-left: 10px;
+    }
+    #search_town .research_town {
+       display: none;
+    }
+    .searchIcon {
+        visibility: visible;
+        border: none;
+        border-radius: 10px;
+        background-color: #0065fc;
+        color: #ffff;
+        width: 40px;
+    }
+    #filters {
+    flex-direction: column;
+     align-items: flex-start;
+    }
+    #filters h2 {
+        font-size: 20px
+    }
+    #filters ul {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .icons_filters {
+         margin: 10px;
+        padding:0px;
+        padding-right: 10px;
+    }
+    #info {
+        margin: 20px 0px;
+    }
+    #info p {
+        margin: 0px 30px 0px 10px;
+    }
+    /*partie hébergement*/
+    #card_content {
+        width: 100%;
+        flex-direction:column;
+        margin: 0px;
+    }
+    #card_location {
+        width: 100%;
+        height: auto;
+        background-color: #ffff;
+        order: 2;
+    }
+    #card_location h2 {
+        margin: 40px 0px 0px 20px;
+        font-size: 20px;
+    }
+    #location_content {
+        width: auto;
+        margin: 0px;
+    }
+
+    #first_locations, #second_locations {
+        width: auto;
+        margin: 0px 0px 0px 10px;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+    .location, .locations {
+        border-radius: 30px;
+         box-shadow: 3px 3px 3px #F2F2F2;
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 5px;
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    .location img, .locations img {
+        width: 100%;
+        border-radius: 30px 30px 0px 0px;
+    }
+    .lodging_infos {
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 15px;
+        border-radius: 0px 0px 30px 30px;
+    }
+    #show_more {
+        font-size: 20px;
+        font-weight: 800;
+        margin-left: 0px; 
+        padding-left: 20px;
+    }
+    /*Partie les plus populaires*/
+    #most_popular {
+        order: 1;
+        width: 100%;
+        border-radius: 0px;
+    }
+    #card_popular {
+        width: 100%;
+    }
+    #popular_title {
+        padding:0px 10px;
+    }
+    .popular_location {
+        width: auto;
+        height: 140px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .popular_location img {
+        width: 35%;
+        height: 130px;
+    }
+    .info_popular {
+        margin: 0px 0px 0px 5px;
+    }
+    .info_popular h3 {
+        margin-top: 10px;
+    }
+    .info_popular i {
+        margin-top: 10px;
+    }
+    /*partie activités*/
+    #activity_content {
+        width: 100%;
+    }
+    #activity_content h2{
+        margin: 0px 0px 0px 20px;
+    }
+    #activity_card {
+        width: 100%;
+        flex-direction: column;
+    }
+    #activity_card .landscape img, .block_card1 .portrait1 img, .block_card1 .portrait2 img ,.block_card2 .portrait2 img, .block_card2 .portrait1 img{
+        width: 95%;
+        height: 150px;
+        border-radius: 30px 30px 0px 0px;
+        margin: 7px;
+    }
+    #activity_card .landscape, .block_card1 .portrait1, .block_card1 .portrait2, .block_card2 .portrait2, .block_card2 .portrait1{
+        width: 90%;
+        height: 200px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        margin: 10px;
+    }
+
+    .block_card1, .block_card2 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+    #activity_card h3 {
+        margin: 0px 0px 0px 15px;
+    }
+    /*footer*/
+    footer {
+        flex-direction: column;
+        height: 450px;
+        width:100%;
+    }
+    .footer_infos {
+        margin-left: 15px;
+    }
+}
