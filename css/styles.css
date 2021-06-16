@@ -9,6 +9,7 @@ body{
 /* En tête de la page (header) */
 
 header {
+    width: auto;
     display: flex;  
    justify-content: space-between;
     align-items: center;
@@ -25,12 +26,15 @@ header {
 /* Menu de navigation */
 
 nav {
+    
     display: flex;
 }
 
 nav ul{
+    padding-left: 20px;
     display: flex;
     margin-top: 2px;
+    
 }
 
 nav li {   
@@ -42,24 +46,20 @@ nav li {
     font-size: 15px;
 }
 
-#lodging a, #sign_up a {
+#sign_up a {
     color: #0065fc;
     text-decoration: none;
 }
 
-#lodging a {
-    border-top: 5px solid #0065fc;
-    padding: 30px;
-}    
-
-#activity a {
+#activity a, #lodging a {
     color: #000;
     text-decoration: none;
 }
 
-#activity a:hover {
+#activity a:hover, #lodging a:hover {
     border-top: #0065fc 3px solid;
     padding-top: 30px;
+    color: #0065fc;
 }
 
 #sign_up a {
