@@ -63,6 +63,10 @@
         background-color: #0065fc;
         color: #ffff;
         width: 40px;
+        margin-left: -10px;
+    }
+    .searchIcon:hover {
+        cursor: pointer;
     }
     #filters {
         width: 95%;
@@ -170,7 +174,7 @@
     }
     .popular_location img {
         width: 30%;
-        height: 150px;
+        height: auto;
         margin-left: 5px;
         
     }
@@ -178,7 +182,8 @@
         margin: 0px 15px;
     }
     .info_popular h3 {
-        font-size: 15px;
+        margin-right: 20px;
+        font-size: 20px;
         margin-top: 10px;
         
     }
@@ -186,7 +191,8 @@
         margin-bottom: 0px;
     }
     .stars {
-        margin-top: 55px;
+        
+        margin-top: 25px;
     }
     /*partie activités*/
     #activity_content {
@@ -200,19 +206,27 @@
         width: 100%;
         flex-direction: column;
     }
-    .block_card1 .landscape img, .block_card2 .landscape img , .block_card1 .portrait1 img, .block_card1 .portrait2 img ,.block_card2 .portrait2 img, .block_card2 .portrait1 img{
+    .block_card1 .landscape img, .block_card2 .landscape img , .block_card1 .portrait1 img, 
+    .block_card1 .portrait2 img ,.block_card2 .portrait2 img, .block_card2 .portrait1 img{
         width: 100%;
         height: 150px;
         border-radius: 30px 30px 0px 0px;
         margin: 0px;
     }
-    #activity_card .landscape, .block_card1 .portrait1, .block_card1 .portrait2, .block_card2 .portrait2, .block_card2 .portrait1{
+    .landscape, .block_card1 .portrait1, .block_card1 .portrait2,
+    .block_card2 .portrait1, .block_card2 .portrait2
+     {
         width: 90%;
         height: 200px;
         border-radius: 30px;
         box-shadow: 5px 5px 5px #F2F2F2;
         margin: 10px;
+
         
+    }
+    .portrait {
+        width: 100%;
+        margin-left: 45px;
     }
 
     .block_card1, .block_card2 {
@@ -235,7 +249,7 @@
     }
 }
 /*media querie max-width 1024px*/
-@media  screen  and (min-width: 770px) and (max-width: 1024px) {
+@media  screen  and (min-width: 769px) and (max-width: 1024px) {
     #card_content {
         width: 100%;
         margin: 0px;
@@ -275,7 +289,11 @@
     #activity_card {
         flex-direction: column;
     }
-
+    .block_card1 .landscape img, .block_card2 .landscape img , .block_card1 .portrait1 img, .block_card1 .portrait2 img ,.block_card2 .portrait2 img, .block_card2 .portrait1 img{
+        width: 100%;
+        
+    }
+    
     .block_card1, .block_card2 {
         margin: 15px 0px 0px ;
     }
@@ -316,11 +334,39 @@
         width: 85%;
         margin-top: 60px;
     }
-    
-    
-    
-   
-    
 }   
+@media  screen and (max-width: 320px) {
+   /*partie populaire*/
+    .info_popular h3 {
+        font-size: 15px;
+        margin-top: 10px;
+        
+    }
+    .stars {
+        margin-top: 35px;
+    }
+    /*partie activités*/
+    .block_card1 .landscape img, .block_card2 .landscape img , .block_card1 .portrait1 img, 
+    .block_card1 .portrait2 img ,.block_card2 .portrait2 img, .block_card2 .portrait1 img{
+        width: 100%;
+        height: 150px;
+        border-radius: 30px 30px 0px 0px;
+        margin: 0px;
+    }
+    .landscape, .block_card1 .portrait1, .block_card1 .portrait2,
+    .block_card2 .portrait1, .block_card2 .portrait2
+     {
+        width: 90%;
+        height: 200px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        margin: 10px;
+
+    }
+    .portrait {
+        width: 100%;
+        margin-left: 15px;
+    }
+}
 
 
