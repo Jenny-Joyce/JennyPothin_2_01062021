@@ -7,7 +7,7 @@ body{
 }
 main {
     width: 98%;
-    margin: auto;
+   
 }
 
 /* En tête de la page (header) */
@@ -214,11 +214,11 @@ nav li {
 #card_content {
     width: 100%;
     display: flex;
-    margin: 0px 25px;
+    margin: 0px 15px;
 }
 
 #card_location {
-    width: 70%;
+    width: 60%;
     flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -233,7 +233,7 @@ nav li {
     width: 100%;
      display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #first_locations {
@@ -261,7 +261,7 @@ nav li {
 .location img, .locations img {
     display: flex;
     margin: 5px;
-    width: auto;
+    width: 95%;
     height: 130px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
@@ -281,6 +281,7 @@ nav li {
 .title_location, .lodging_infos p {
     margin-bottom: 10px;
     margin-top: 0px;
+    font-size: 0.8rem;
 }
 
 .star {
@@ -291,7 +292,7 @@ nav li {
 .star .empty_star, .stars .empty_star {
     color: #F2F2F2
 }
-
+/*afficher plus*/
 #show_more {
     padding: 30px 50px 15px 30px;
     font-weight: 600;
@@ -305,7 +306,7 @@ nav li {
 /* section les plus populaires */
 
 #most_popular {
-    width:25%;
+    width:35%;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
@@ -329,7 +330,7 @@ nav li {
 .popular_location img {
     display: flex;
     width: 40%;
-    height: 150px;
+    height: 160px;
     border-radius: 20px 0px 0px 20px;
     margin: 5px;
     object-fit: cover;
@@ -339,7 +340,7 @@ nav li {
      display: flex;
      background-color: #ffff;
      border-radius: 20px;
-     margin: 25px 30px 30px;
+     margin: 25px 30px 30px ;
      width: 85%;
      height: auto;
      
@@ -353,13 +354,14 @@ nav li {
 /* partie infos populaires*/
 
 .info_popular {
-    margin-left: 30px;
+    margin-left: 20px;
     
 }
 
 .info_popular h3 {
     margin-bottom: 0px;
     margin-top: 10px;
+    font-size: 1rem;
 }
 
 .info_popular p {
@@ -369,7 +371,7 @@ nav li {
 
 .stars {
     color: #0065fc;
-    margin:45px 0px 0px;
+    margin-top: 85px;
 }
 
 /* section activités*/
@@ -388,7 +390,9 @@ nav li {
 }
 
 #activity_card h3 {
-    margin: 10px 90px 10px 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 .portrait {
