@@ -163,14 +163,14 @@
     }
     .popular_location {
         width: 90%;
-        height: auto;
+        height: 140px;
         margin: 15px;
         border-radius: 20px;
         
     }
     .popular_location img {
         width: 30%;
-        height: 130px;
+        height: 150px;
         margin-left: 5px;
         
     }
@@ -261,7 +261,7 @@
         margin: 10px;
     }
     .info_popular {
-        margin-left: 5px;
+        margin-left: 0px;
     }
     .stars {
         margin: 70px 0px 0px;
