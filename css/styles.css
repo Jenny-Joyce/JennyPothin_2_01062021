@@ -1,9 +1,13 @@
 /* Element général */
 
 body{
-    width: 100%;
+   width: 100%;
      margin: 0px;
     font-family: "Raleway", sans-serif ;
+}
+main {
+    width: 98%;
+    margin: auto;
 }
 
 /* En tête de la page (header) */
@@ -51,7 +55,7 @@ nav li {
     text-decoration: none;
 }
 
-#activity a, #lodging a {
+#activity a , #lodging a{
     color: #000;
     text-decoration: none;
 }
@@ -61,6 +65,7 @@ nav li {
     padding-top: 30px;
     color: #0065fc;
 }
+
 
 #sign_up a {
     font-weight: 600;
@@ -123,7 +128,7 @@ nav li {
 .searchIcon {
     visibility: hidden;
 }
-.research:hover {
+.research_town:hover {
     cursor: pointer;
 }
 
@@ -172,7 +177,8 @@ nav li {
 .icons_filters:hover {
     cursor: pointer;
     background-color: #deebff;
-    transition-duration: 0.25s;
+    transform: scale(1.03);
+    transition: ease 0.4s;
 }
 
 .icons_filters:hover i {
@@ -206,22 +212,25 @@ nav li {
 /* Partie hébergements */
 
 #card_content {
+    width: 100%;
     display: flex;
-    margin: 30px;
+    margin: 0px 25px;
 }
 
 #card_location {
+    width: 70%;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 20px;
-    height: 720px;
-    margin-right: 50px;
-    flex: 2;
+    height: auto;
 }
+
 #card_location h2 {
     margin-left: 30px;
 }
     
 #location_content {
+    width: 100%;
      display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -229,36 +238,38 @@ nav li {
 
 #first_locations {
     display: flex;
-    justify-content: space-between;
-    margin: 30px 30px 50px 30px; 
+    justify-content: space-around;
+    margin: 30px 30px 50px; 
 }
 
 #second_locations {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0px 30px;
 }
 
 .location, .locations {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     border-radius: 20px;
     background-color: #ffff;
-    width: 290px;
-    transition: transform 0.5s;
+    width: 30%;
+    
 }
 
 .location img, .locations img {
     display: flex;
     margin: 5px;
-    width: 280px;
+    width: auto;
     height: 130px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 
 .location:hover, .locations:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+    transition: ease 0.4s;
     cursor: pointer;
 }
 /* Partie infos hébergements */
@@ -272,12 +283,12 @@ nav li {
     margin-top: 0px;
 }
 
-.lodging_infos i {
-    margin-bottom: 15px;
+.star {
+    margin-bottom: 10px;
     color: #0065fc;
 }
 
-.lodging_infos .empty_star, .info_popular .empty_star {
+.star .empty_star, .stars .empty_star {
     color: #F2F2F2
 }
 
@@ -294,12 +305,14 @@ nav li {
 /* section les plus populaires */
 
 #most_popular {
+    width:25%;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     height: 720px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    flex: 1;
+    
 } 
 
 #popular_title {
@@ -315,8 +328,7 @@ nav li {
 
 .popular_location img {
     display: flex;
-    align-items: center;
-    width: 180px;
+    width: 40%;
     height: 150px;
     border-radius: 20px 0px 0px 20px;
     margin: 5px;
@@ -327,13 +339,14 @@ nav li {
      display: flex;
      background-color: #ffff;
      border-radius: 20px;
-     margin: 25px 30px 50px 50px;
-     width: 430px;
-     height: 160px;
-     transition: transform 0.5s;
+     margin: 25px 30px 30px;
+     width: 85%;
+     height: auto;
+     
 }
 .popular_location:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+    transition: ease 0.4s;
     cursor: pointer;
 }
 
@@ -341,18 +354,22 @@ nav li {
 
 .info_popular {
     margin-left: 30px;
+    
 }
 
 .info_popular h3 {
     margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .info_popular p {
-    margin: 10px 0px 25px
+    margin-top: 10px;
+    margin-bottom: 30px; 
 }
 
-.info_popular i {
+.stars {
     color: #0065fc;
+    margin:45px 0px 0px;
 }
 
 /* section activités*/
@@ -360,8 +377,12 @@ nav li {
 #activity_content h2 {
     margin: 50px 0px 5px 30px;
 }
+#activity_content {
+    width: 100%;
 
+}
 #activity_card {
+    width: 100%;
     display: flex;
     margin-bottom: 50px;
 }
@@ -370,44 +391,47 @@ nav li {
     margin: 10px 90px 10px 20px;
 }
 
-#activity_card .portrait {
+.portrait {
     display: flex;
     flex-direction: column;
 }
 
 .block_card1, .block_card2{
+    width: 100%;
     display: flex;
-    margin: 15px 20px;
+    align-items: center;
+    
 }
 
-#activity_card .landscape {
-    background-color: #ffff;
+.landscape{
+    width: 70%;
+    margin-left: 20px;
+    background-color: #fff;
     box-shadow: 0px 5px 6px #F2F2F2;
     border-radius: 20px;
-    height: 550px;
-    transition: transform 0.5s;
+    height: 95%;
+    
 }
 
-.block_card1 .landscape img {
-    width: 400px;
-    height: 500px;
+.landscape img {
+    width: 100%;
+    height: 90%;
     object-fit: cover;
-    margin-top: 0px;
-    border-radius: 20px 20px 0px 0px;
+     border-radius: 20px 20px 0px 0px;
 }
 
 .block_card1 .portrait1 {
     background-color: #ffff;
     box-shadow: 0px 5px 6px #F2F2F2;
     border-radius: 20px;
-    width: 350px;
-    height: 300px;
-    margin: 0px 50px 20px 90px;
-    transition: transform 0.5s;
+    width: 80%;
+    height: 50%;
+    margin: 15px 60px 20px ;
+    
 }
 
 .block_card1 .portrait1 img {
-    width: 350px;
+    width: 100%;
     height: 250px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
@@ -417,49 +441,44 @@ nav li {
     background-color: #ffff;
     box-shadow: 0px 5px 6px #F2F2F2;
     border-radius: 20px;
-    width: 350px;
-    height: 200px;
-    margin: 30px 90px;
-    transition: transform 0.5s;
+    width: 80%;
+    height: 30%;
+    margin: 10px 60px;
+    
 }
 
 .block_card1 .portrait2 img {
-    width: 350px;
+    width: 100%;
     height: 150px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
+
 }
 
-
-.block_card2 .landscape img {
-    width: 370px;
-    height: 500px;
-    object-fit: cover;
-    margin-top: 0px;
-    border-radius: 20px 20px 0px 0px;
-}
 
 .block_card2 .portrait1 {
-    margin: 0px 80px 50px;
+    width: 80%;
+    margin: 10px 60px ;
     background-color: #ffff;
     box-shadow: 0px 5px 6px #F2F2F2;
     border-radius: 20px;
-    height: 250px;
-    transition: transform 0.5s;
+    height: 230px;
+    
 }
 
 .block_card2 .portrait2 {
     background-color: #ffff;
     box-shadow: 0px 5px 6px #F2F2F2;
     border-radius: 20px;
-    height: 250px;
-    margin: 0px 80px;
-    transition: transform 0.5s;
+    width: 80%;
+    height: 230px;
+    margin: 50px 60px 12px;
+    
 }
 
 .block_card2 .portrait1 img, .portrait2 img {
-    width: 350px;
-    height: 200px;
+    width: 100%;
+    height: 80%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -467,13 +486,15 @@ nav li {
 /* animations activités*/
 
 .portrait1:hover, .portrait2:hover, .landscape:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+    transition: ease 0.4s;
     cursor: pointer;
 }
 
 /* Footer */
 
 footer{
+    width: 100%;
     background-color: #F2F2F2;
     height: 200px; 
     display: flex;
@@ -499,7 +520,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-   
 
 
 
