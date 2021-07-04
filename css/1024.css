@@ -189,6 +189,7 @@
     }
     .info_popular p {
         margin-bottom: 0px;
+        font-size: 14px;
     }
     .stars {
         
@@ -336,13 +337,16 @@
 }   
 @media  screen and (max-width: 320px) {
    /*partie populaire*/
+   .info_popular {
+       margin-left: 15px;
+   }
     .info_popular h3 {
-        font-size: 15px;
+        font-size: 14px;
         margin-top: 10px;
         
     }
     .stars {
-        margin-top: 35px;
+        margin-top: 45px;
     }
     /*partie activités*/
     .block_card1 .landscape img, .block_card2 .landscape img , .block_card1 .portrait1 img, 
@@ -366,8 +370,11 @@
         width: 100%;
     }
 }
-@media  screen and (max-width: 425px) {
-    
+@media  screen and (min-width: 425px) and (max-width:500px) {
+    .popular_location {
+        width: 80%;
+        margin: 15px 0px 15px 30px;
+    }
     .portrait {
         width: 100%;
     }
